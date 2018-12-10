@@ -8,6 +8,7 @@
     <br/>
   </h1>
   <br/>
+  <br/>
   <sup>
     <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and manipulating variable fonts.</em>
     <br/>
@@ -56,6 +57,7 @@ updateStyles({SHDW: 100});
 ```
 * New settings override previous settings. 
 * passing `normal` resets the variation settings
+
 
 ## Example
 ```javascript
