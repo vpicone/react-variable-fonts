@@ -31,6 +31,8 @@
 
 
 ## Usage
+#### The hook takes a font-family and initial variation settings as arguments
+
 #### Font variation settings are defined as object literals
 ```javascript
 const settings = {
@@ -39,7 +41,6 @@ const settings = {
   BVEL: 100
 }
 ```
-You can also pass `normal` to reset all of the variation settings.
 
 #### The first return of the hook will be a CSS property object.
 ```javascript
@@ -49,12 +50,14 @@ return <p style={{...normalStyles}}>Hello world</p>
 
 #### The second return will be an update function
 ```javascript
-const [customStyles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
+const [styles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
+
 updateStyles({SHDW: 100});
 ```
+* New settings override previous settings. 
+* passing `normal` resets the variation settings
 
-<h2 align="center">Example</h2>
-
+## Example
 ```javascript
 import React from "react";
 import useVariableFont from "react-variable-fonts";
