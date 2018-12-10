@@ -13,14 +13,12 @@
     <br/>
     You need React <code>16.7.0-alpha.0</code> or later installed to use Hooks.
   </sup>
-  <br/>
-  <br />
-  <pre>npm i <a href="https://www.npmjs.com/package/react-variable-fonts">react-variable-fonts</a></pre>
-  <br />
 </div>
 
-<h2 align="center">Usage</h2>
-
+<h2 align="center">Install</h2>
+<div align="center">
+  <pre>npm i <a href="https://www.npmjs.com/package/react-variable-fonts">react-variable-fonts</a></pre>
+</div>
 
 ```css
 @font-face {
@@ -31,7 +29,9 @@
 }
 ```
 Define a font face somewhere in your project's style sheet.
-___
+
+<h2 align="center">Usage</h2>
+
 ```javascript
 const [normalStyles] = useVariableFont("Rocher", "normal");
 const [customStyles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
@@ -40,7 +40,7 @@ const [customStyles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
 * The second return will be an update function that takes either
     1. A settings object to be merged with the current settings
     1. `normal` to reset the settings
-___
+
 <h2 align="center">Example</h2>
 
 ```javascript
