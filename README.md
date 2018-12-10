@@ -9,17 +9,17 @@
   </h1>
   <br/>
   <sup>
-    <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and using variable fonts.</em>
+    <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and manipulating variable fonts.</em>
     <br/>
     You need React <code>16.7.0-alpha.0</code> or later installed to use Hooks.
   </sup>
 </div>
 
-<h2 align="center">Install</h2>
-<div align="center">
-  <pre>npm i <a href="https://www.npmjs.com/package/react-variable-fonts">react-variable-fonts</a></pre>
-</div>
+## Setup
+#### Install the package
+<pre>npm i <a href="https://www.npmjs.com/package/react-variable-fonts">react-variable-fonts</a></pre>
 
+#### Define your font-face somewhere in your stylesheet
 ```css
 @font-face {
     font-family: "Rocher";
@@ -28,18 +28,30 @@
     font-weight: normal;
 }
 ```
-Define a font face somewhere in your project's style sheet.
 
-<h2 align="center">Usage</h2>
 
+## Usage
+#### Font variation settings are defined as object literals
+```javascript
+const settings = {
+  // axis: value,
+  SHDW: 40,
+  BVEL: 100
+}
+```
+You can also pass `normal` to reset all of the variation settings.
+
+#### The first return of the hook will be a CSS property object.
 ```javascript
 const [normalStyles] = useVariableFont("Rocher", "normal");
-const [customStyles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
+return <p style={{...normalStyles}}>Hello world</p>
 ```
-* The first return of the hook will be a CSS property object.
-* The second return will be an update function that takes either
-    1. A settings object to be merged with the current settings
-    1. `normal` to reset the settings
+
+#### The second return will be an update function
+```javascript
+const [customStyles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
+updateStyles({SHDW: 100});
+```
 
 <h2 align="center">Example</h2>
 
@@ -70,8 +82,7 @@ const Demo = () => {
 };
 ```
 ___
-<h2 align="center">"What can my font do?"</h2>
-<div align="center"><sup>Get the most from your variable fonts</sup></div>
+## What Can My font do?
 
 1. Firefox Developer tools 
 
