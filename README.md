@@ -19,6 +19,8 @@
 
 ## Setup
 #### Install the package
+[![npm version](https://badge.fury.io/js/react-variable-fonts.svg)](https://badge.fury.io/js/react-variable-fonts)
+
 <pre>npm i <a href="https://www.npmjs.com/package/react-variable-fonts">react-variable-fonts</a></pre>
 
 #### Define your font-face somewhere in your stylesheet
