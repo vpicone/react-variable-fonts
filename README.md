@@ -34,30 +34,33 @@
 
 
 ## Usage
-#### The hook takes a font-family and initial variation settings as arguments
+#### Pass in a font-family string and some initial settings (or `normal`).
 
-#### Font variation settings are defined as object literals
 ```javascript
 const settings = {
   // axis: value,
   SHDW: 40,
   BVEL: 100
 }
+
+const [styles] = useVariableFont("Rocher", settings);
 ```
 
-#### The first return of the hook will be a CSS property object.
+#### The first index will be CSS property object.
 ```javascript
 const [normalStyles] = useVariableFont("Rocher", "normal");
+
 return <p style={{...normalStyles}}>Hello world</p>
 ```
 
-#### The second return will be an update function
+#### The second index will be function to update the settings
 ```javascript
-const [styles, updateStyles] = useVariableFont("Rocher", { BVEL: 10 });
+const [styles, updateStyles] = useVariableFont("Rocher", "normal");
 
 updateStyles({SHDW: 100});
 ```
-* New settings override previous settings. 
+* Same rules as initial settings
+* New settings override previous settings
 * passing `normal` resets the variation settings
 
 
