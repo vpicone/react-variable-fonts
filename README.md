@@ -10,9 +10,11 @@
   <br/>
   <br/>
   <sup>
-    <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and manipulating variable fonts.</em>
+    A <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and manipulating <a href="https://v-fonts.com/">variable fonts.</a></em>
     <br/>
-    You need React <code>16.7.0-alpha.0</code> or later installed to use Hooks.
+  <a href="https://wakamaifondue.com/">What can my font do?</a>
+    <br/>
+    You need React <code>^16.7.0-alpha.0</code> to use Hooks.
   </sup>
 </div>
 
@@ -86,9 +88,3 @@ const Demo = () => {
   );
 };
 ```
-___
-## What Can My font do?
-
-1. Firefox Developer tools 
-
-1. [Wakamaifondue](https://wakamaifondue.com/)
