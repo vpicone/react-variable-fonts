@@ -1,0 +1,38 @@
+{
+  "name": "react-variable-fonts",
+  "version": "1.1.0",
+  "description": "React hook for loading and manipulating variable fonts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "variable",
+    "font"
+  ],
+  "author": "Vince Picone <vp@vincepic.one> (https://vincepic.one)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fontfaceobserver": "0.0.6",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.13",
+    "fontfaceobserver": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  }
+}
