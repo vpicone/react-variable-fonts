@@ -8,7 +8,6 @@
     <br/>
   </h1>
   <br/>
-  <br/>
   <sup>
     A <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and manipulating <a href="https://v-fonts.com/">variable fonts.</a></em>
     <br/>
