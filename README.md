@@ -12,9 +12,9 @@
   <sup>
     A <a href="https://reactjs.org/docs/hooks-intro.html">React Hook</a> for loading and manipulating <a href="https://v-fonts.com/">variable fonts.</a></em>
     <br/>
-  <a href="https://wakamaifondue.com/">What can my font do?</a>
-    <br/>
     You need React <code>^16.7.0-alpha.0</code> to use Hooks.
+      <br/>
+  <a href="https://wakamaifondue.com/">What can my font do?</a>
   </sup>
 </div>
 
