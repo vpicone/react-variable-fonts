@@ -1,6 +1,6 @@
 {
   "name": "react-variable-fonts",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "React hook for loading and manipulating variable fonts",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
