@@ -5,6 +5,13 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vpicone/react-variable-fonts"
+  },
+  "bugs": {
+    "url": "https://github.com/vpicone/react-variable-fonts/issues"
+  },
   "files": [
     "lib/"
   ],
